@@ -9,8 +9,9 @@ See http://github.com/ingydotnet/swim-pm#readme
 =head1 Swim - See What I Mean?!
 
 This is a basic Info doc for the Swim markup language.
-Swim is a new text markup language in the line of Markdown and wiki markups.
-It's goals are:
+
+Swim is a new text markup language in the line of Markdown and wiki markups. It's goals are:
+
 =over
 
 =item * Superset of all common markup models
@@ -54,10 +55,11 @@ It's goals are:
 =back
 
 This document is a very high level overview, with pointer to more info:
+
 =head2 Swim in the Wild
 
-Here are some rather complex Swim documents in the wild (with output in Pod
-for viewing on GitHub):
+Here are some rather complex Swim documents in the wild (with output in Pod for viewing on GitHub):
+
 =over
 
 =item * L<https://github.com/ingydotnet/git-hub/blob/master/doc/git-hub.swim>
@@ -79,35 +81,43 @@ for viewing on GitHub):
 =back
 
 I'll add more soon.
+
 =head2 Extension Markup
 
-Simple things like B<bold> I<italic> _underline_ --strike-- and C<code> are
-done:
+Simple things like B<bold> I<italic> _underline_ --strike-- and C<code> are done:
+
     Simple things like *bold* /italic/ _underline_ --strike-- and `code` are done:
 
-NOTE: If you are looking at the Pod translation, Pod can't support
-      strikethrough, afaict.
+NOTE: If you are looking at the Pod translation, Pod can't support strikethrough, afaict.
+
 There is also a generic syntax that these things and more can be done with:
+
     <name arguments go here>
 
 For instance this:
+
 =for html
 <a href="https://travis-ci.org/ingydotnet/swim-pm"><img src="https://travis-ci.org/ingydotnet/swim-pm.png" alt="swim-pm"></a>
 <a href="https://coveralls.io/r/ingydotnet/swim-pm?branch=master"><img src="https://coveralls.io/repos/ingydotnet/swim-pm/badge.png" alt="swim-pm"></a>
 
+
+
 is made with:
+
     <badge travis coveralls ingydotnet/swim-pm>
 
 Also things like <bold bold text> can be done explicitly:
+
     Also things like <bold bold text> can be done explicitly:
 
 The I<block> extension syntax is:
+
     <<< name arguments go here
     text for extension
     >>>
 
-This is in keeping with various 1-char / 3-char syntaxes out there like GitHub-
-flavored Markdown's:
+This is in keeping with various 1-char / 3-char syntaxes out there like GitHub-flavored Markdown's:
+
     Some `code`:
 
     ```
@@ -115,6 +125,7 @@ flavored Markdown's:
     ```
 
 Or CoffeeScript's:
+
     # Line comment
 
     ###
@@ -129,6 +140,7 @@ Or CoffeeScript's:
     ///
 
 or Python's:
+
     s = "string"
     s = """
     multiline
@@ -138,6 +150,7 @@ or Python's:
 =head2 Plugins
 
 The main Swim implementation is:
+
 =over
 
 =item * L<https://metacpan.org/release/Swim>
@@ -145,6 +158,7 @@ The main Swim implementation is:
 =back
 
 And the one plugin so far is:
+
 =over
 
 =item * L<https://metacpan.org/release/Swim-Plugin-badge>
@@ -154,6 +168,7 @@ And the one plugin so far is:
 =head2 The Swim Grammar
 
 Swim is defined by a Pegex (PEG) grammar here:
+
 =over
 
 =item * L<https://github.com/ingydotnet/swim-pgx/blob/master/swim.pgx>
@@ -161,6 +176,7 @@ Swim is defined by a Pegex (PEG) grammar here:
 =back
 
 This affords:
+
 =over
 
 =item * Pegex can more easily be implemented in several languages
@@ -175,24 +191,29 @@ This affords:
 
 All of the L<CPAN modules listed
 here|https://metacpan.org/pod/distribution/Zilla-Dist/lib/Zilla/Dist.pod#Modules-Published-to-CPAN-w-zild> have had their Pod turned into Swim in their source code. It gets turned back into nearly the original Pod when the modules go to CPAN.
+
 If you clone one of these repos, try running these commands:
+
 =over
 
 =item C<make cpan>
 
-This creates a CPAN directory, that is Dist::Zilla ready. All the Swim
-is now Pod.
+This creates a CPAN directory, that is Dist::Zilla ready. All the Swim is now Pod.
+
 =item C<make dist>
 
 Create the package that is ready for CPAN.
+
 =item C<make help>
 
 More cool C<make> targets.
+
 =back
 
 =head2 Of Interest
 
 The markup for multiple blank lines is...
+
 multiple blank lines!
 
 =cut
