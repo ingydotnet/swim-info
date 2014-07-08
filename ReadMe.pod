@@ -189,9 +189,8 @@ This affords:
 
 =head2 Swim to Pod on CPAN
 
-All of the CPAN modules listed here have had their Pod turned into Swim in their source code. It gets turned back into nearly the original Pod when the modules go to CPAN.
-
-See: L<https://metacpan.org/pod/distribution/Zilla-Dist/lib/Zilla/Dist.pod#Modules-Published-to-CPAN-w-zild>
+All of the L<CPAN modules listed
+here|https://metacpan.org/pod/distribution/Zilla-Dist/lib/Zilla/Dist.pod#Modules-Published-to-CPAN-w-zild> have had their Pod turned into Swim in their source code. It gets turned back into nearly the original Pod when the modules go to CPAN.
 
 If you clone one of these repos, try running these commands:
 
