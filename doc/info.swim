@@ -50,11 +50,11 @@ There is also a generic syntax that these things and more can be done with:
 
 For instance this:
 
-<badge travis coveralls ingydotnet/yaml-pm>
+<badge travis coveralls ingydotnet/swim-pm>
 
 is made with:
 
-  <badge travis coveralls ingydotnet/yaml-pm>
+  <badge travis coveralls ingydotnet/swim-pm>
 
 Also things like <bold bold text> can be done explicitly:
 

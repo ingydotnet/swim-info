@@ -97,14 +97,14 @@ There is also a generic syntax that these things and more can be done with:
 For instance this:
 
 =for html
-<a href="https://travis-ci.org/ingydotnet/yaml-pm"><img src="https://travis-ci.org/ingydotnet/yaml-pm.png" alt="yaml-pm"></a>
-<a href="https://coveralls.io/r/ingydotnet/yaml-pm?branch=master"><img src="https://coveralls.io/repos/ingydotnet/yaml-pm/badge.png" alt="yaml-pm"></a>
+<a href="https://travis-ci.org/ingydotnet/swim-pm"><img src="https://travis-ci.org/ingydotnet/swim-pm.png" alt="swim-pm"></a>
+<a href="https://coveralls.io/r/ingydotnet/swim-pm?branch=master"><img src="https://coveralls.io/repos/ingydotnet/swim-pm/badge.png" alt="swim-pm"></a>
 
 
 
 is made with:
 
-    <badge travis coveralls ingydotnet/yaml-pm>
+    <badge travis coveralls ingydotnet/swim-pm>
 
 Also things like <bold bold text> can be done explicitly:
 
