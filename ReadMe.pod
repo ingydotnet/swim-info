@@ -115,7 +115,7 @@ The I<block> extension syntax is:
     text for extension
     >>>
 
-This is in keeping with various 1 to 3 syntaxes out there like:
+This is in keeping with various 1-char / 3-char syntaxes out there like:
 
     Some `code`:
 
