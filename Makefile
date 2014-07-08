@@ -3,8 +3,7 @@ all: ReadMe.pod Info.pod Info.txt
 # all: ReadMe.pod Info.html Info.md Info.pod Info.txt
 
 Info.pod ReadMe.pod: doc/info.swim Makefile
-	swim --to=pod --complete=1 $< > $@
-	@#swim --to=pod --wrap=1 --complete=1 $< > $@
+	swim --to=pod --wrap=1 --complete=1 $< > $@
 
 Info.html: doc/info.swim Makefile
 	swim --to=html --complete=1 $< > $@

@@ -81,7 +81,7 @@ Swim - See What I Mean?!
         >>>
 
     This is in keeping with various 1-char / 3-char syntaxes out there like
-    GitHub- flavored Markdown's:
+    GitHub-flavored Markdown's:
 
         Some `code`:
 
@@ -135,9 +135,11 @@ Swim - See What I Mean?!
     *   Bugs can be fixed in one place
 
   Swim to Pod on CPAN
-    All of the CPAN modules listed here have had their Pod turned into Swim
-    in their source code. It gets turned back into nearly the original Pod
-    when the modules go to CPAN.
+    All of the CPAN modules listed here
+    <https://metacpan.org/pod/distribution/Zilla-Dist/lib/Zilla/Dist.pod#Mod
+    ules-Published-to-CPAN-w-zild> have had their Pod turned into Swim in
+    their source code. It gets turned back into nearly the original Pod when
+    the modules go to CPAN.
 
     If you clone one of these repos, try running these commands:
 
