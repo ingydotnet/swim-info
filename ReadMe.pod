@@ -86,10 +86,13 @@ I'll add more soon.
 
 =head2 Extension Markup
 
-Simple things like B<bold> I<italic> _underline_ C<--strike--> and
-C<code> are done:
+Simple things like B<bold> I<italic> _underline_ --strike-- and C<code> are
+done:
 
     Simple things like *bold* /italic/ _underline_ --strike-- and `code` are done:
+
+NOTE: If you are looking at the Pod translation, Pod can't support
+      strikethrough, afaict.
 
 There is also a generic syntax that these things and more can be done with:
 
@@ -115,13 +118,37 @@ The I<block> extension syntax is:
     text for extension
     >>>
 
-This is in keeping with various 1-char / 3-char syntaxes out there like:
+This is in keeping with various 1-char / 3-char syntaxes out there like GitHub-
+flavored Markdown's:
 
     Some `code`:
 
     ```
     some code
     ```
+
+Or CoffeeScript's:
+
+    # Line comment
+
+    ###
+    Block
+    comment
+    ###
+
+    str =~ /regexp/
+    str =~ ///
+      multiline
+      regex
+    ///
+
+or Python's:
+
+    s = "string"
+    s = """
+    multiline
+    string
+    """
 
 =head2 Plugins
 
@@ -163,9 +190,37 @@ This affords:
 
 =back
 
+=head2 Swim to Pod on CPAN
+
+All of the CPAN modules listed here have had their Pod turned into Swim in
+their source code. It gets turned back into nearly the original Pod when the
+modules go to CPAN.
+
+See: L<https://metacpan.org/pod/distribution/Zilla-
+Dist/lib/Zilla/Dist.pod#Modules-Published-to-CPAN-w-zild>
+
+If you clone one of these repos, try running these commands:
+
+=over
+
+=item C<make cpan>
+
+This creates a CPAN directory, that is Dist::Zilla ready. All the Swim
+is now Pod.
+
+=item C<make dist>
+
+Create the package that is ready for CPAN.
+
+=item C<make help>
+
+More cool C<make> tagets.
+
+=back
+
 =head2 Of Interest
 
-The markup for multiple blank line is...
+The markup for multiple blank lines is...
 
 multiple blank lines!
 
