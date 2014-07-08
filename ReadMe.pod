@@ -10,8 +10,7 @@ See http://github.com/ingydotnet/swim-pm#readme
 
 This is a basic Info doc for the Swim markup language.
 
-Swim is a new text markup language in the line of Markdown and wiki markups.
-It's goals are:
+Swim is a new text markup language in the line of Markdown and wiki markups. It's goals are:
 
 =over
 
@@ -59,8 +58,7 @@ This document is a very high level overview, with pointer to more info:
 
 =head2 Swim in the Wild
 
-Here are some rather complex Swim documents in the wild (with output in Pod
-for viewing on GitHub):
+Here are some rather complex Swim documents in the wild (with output in Pod for viewing on GitHub):
 
 =over
 
@@ -86,13 +84,11 @@ I'll add more soon.
 
 =head2 Extension Markup
 
-Simple things like B<bold> I<italic> _underline_ --strike-- and C<code> are
-done:
+Simple things like B<bold> I<italic> _underline_ --strike-- and C<code> are done:
 
     Simple things like *bold* /italic/ _underline_ --strike-- and `code` are done:
 
-NOTE: If you are looking at the Pod translation, Pod can't support
-      strikethrough, afaict.
+NOTE: If you are looking at the Pod translation, Pod can't support strikethrough, afaict.
 
 There is also a generic syntax that these things and more can be done with:
 
@@ -103,6 +99,8 @@ For instance this:
 =for html
 <a href="https://travis-ci.org/ingydotnet/yaml-pm"><img src="https://travis-ci.org/ingydotnet/yaml-pm.png" alt="yaml-pm"></a>
 <a href="https://coveralls.io/r/ingydotnet/yaml-pm?branch=master"><img src="https://coveralls.io/repos/ingydotnet/yaml-pm/badge.png" alt="yaml-pm"></a>
+
+
 
 is made with:
 
@@ -118,8 +116,7 @@ The I<block> extension syntax is:
     text for extension
     >>>
 
-This is in keeping with various 1-char / 3-char syntaxes out there like GitHub-
-flavored Markdown's:
+This is in keeping with various 1-char / 3-char syntaxes out there like GitHub-flavored Markdown's:
 
     Some `code`:
 
@@ -192,12 +189,9 @@ This affords:
 
 =head2 Swim to Pod on CPAN
 
-All of the CPAN modules listed here have had their Pod turned into Swim in
-their source code. It gets turned back into nearly the original Pod when the
-modules go to CPAN.
+All of the CPAN modules listed here have had their Pod turned into Swim in their source code. It gets turned back into nearly the original Pod when the modules go to CPAN.
 
-See: L<https://metacpan.org/pod/distribution/Zilla-
-Dist/lib/Zilla/Dist.pod#Modules-Published-to-CPAN-w-zild>
+See: L<https://metacpan.org/pod/distribution/Zilla-Dist/lib/Zilla/Dist.pod#Modules-Published-to-CPAN-w-zild>
 
 If you clone one of these repos, try running these commands:
 
@@ -205,8 +199,7 @@ If you clone one of these repos, try running these commands:
 
 =item C<make cpan>
 
-This creates a CPAN directory, that is Dist::Zilla ready. All the Swim
-is now Pod.
+This creates a CPAN directory, that is Dist::Zilla ready. All the Swim is now Pod.
 
 =item C<make dist>
 

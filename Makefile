@@ -1,2 +1,3 @@
-ReadMe.pod: doc/info.swim
-	swim --to=pod --wrap=1 --complete=1 $< > $@
+ReadMe.pod: doc/info.swim Makefile
+	swim --to=pod --complete=1 $< > $@
+	@#swim --to=pod --wrap=1 --complete=1 $< > $@
