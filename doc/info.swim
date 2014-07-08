@@ -81,6 +81,17 @@ And the one plugin so far is:
 
 * https://metacpan.org/release/Swim-Plugin-badge
 
+== The Swim Grammar
+
+Swim is defined by a Pegex (PEG) grammar
+"here"[https://github.com/ingydotnet/swim-pgx/blob/master/swim.pgx].
+
+This affords:
+
+* Pegex can more easily be implemented in several languages
+* New features can be added in one place
+* Bugs can be fixed in one place
+
 == Of Interest
 
 The markup for multiple blank line is...

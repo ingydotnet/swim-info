@@ -141,6 +141,23 @@ And the one plugin so far is:
 
 =back
 
+=head2 The Swim Grammar
+
+Swim is defined by a Pegex (PEG) grammar L<here|https://github.com/ingydotnet/swim-
+pgx/blob/master/swim.pgx>.
+
+This affords:
+
+=over
+
+=item * Pegex can more easily be implemented in several languages
+
+=item * New features can be added in one place
+
+=item * Bugs can be fixed in one place
+
+=back
+
 =head2 Of Interest
 
 The markup for multiple blank line is...
