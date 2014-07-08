@@ -1,0 +1,90 @@
+= Swim - See What I Mean?!
+
+This is a basic Info doc for the Swim markup language.
+
+Swim is a new text markup language in the line of Markdown and wiki markups.
+It's goals are:
+
+* Superset of all common markup models
+* Generate other markups: HTML, Markdown, Pod, ReST, nroff(manpage)
+* Generate binary: MSWord, PDF, DVI
+* Best-of syntax for most common things
+* Generic extension syntax for other stuff
+* More nestable than typical markups
+  * ie things like Lists of tables of code
+* Defined by a nice top-down PEG (grammar)
+* (Identical) Implementations in (at least) Perl, Ruby, JavaScript
+* Plugin architecture to support more extravagant things
+* Support various domains including:
+  * Documentation
+  * Blogs
+  * Articles
+  * Books
+
+This document is a very high level overview, with pointer to more info:
+
+== Swim in the Wild
+
+Here are some rather complex Swim documents in the wild (with output in Pod for
+viewing on GitHub):
+
+* https://github.com/ingydotnet/git-hub/blob/master/doc/git-hub.swim
+  * https://github.com/ingydotnet/git-hub#readme
+* https://github.com/ingydotnet/swim-pm/blob/master/doc/Swim.swim
+  * https://github.com/ingydotnet/swim-pm#readme
+
+I'll add more soon.
+
+== Extension Markup
+
+Simple things like *bold* /italic/ _underline_ `--strike--` and `code` are done:
+
+  Simple things like *bold* /italic/ _underline_ --strike-- and `code` are done:
+
+There is also a generic syntax that these things and more can be done with:
+
+  <name arguments go here>
+
+For instance this:
+
+<badge travis coveralls ingydotnet/yaml-pm>
+
+is made with:
+
+  <badge travis coveralls ingydotnet/yaml-pm>
+
+Also things like <bold bold text> can be done explicitly:
+
+  Also things like <bold bold text> can be done explicitly:
+
+The /block/ extension syntax is:
+
+  <<< name arguments go here
+  text for extension
+  >>>
+
+This is in keeping with various 1 to 3 syntaxes out there like:
+
+  Some `code`:
+
+  ```
+  some code
+  ```
+
+== Plugins
+
+The main Swim implementation is:
+
+* https://metacpan.org/release/Swim
+
+And the one plugin so far is:
+
+* https://metacpan.org/release/Swim-Plugin-badge
+
+== Of Interest
+
+The markup for multiple blank line is...
+
+
+
+multiple blank lines!
