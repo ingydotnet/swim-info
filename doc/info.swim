@@ -83,8 +83,9 @@ And the one plugin so far is:
 
 == The Swim Grammar
 
-Swim is defined by a Pegex (PEG) grammar
-"here"[https://github.com/ingydotnet/swim-pgx/blob/master/swim.pgx].
+Swim is defined by a Pegex (PEG) grammar here:
+
+* https://github.com/ingydotnet/swim-pgx/blob/master/swim.pgx
 
 This affords:
 

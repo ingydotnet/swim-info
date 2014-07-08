@@ -143,8 +143,13 @@ And the one plugin so far is:
 
 =head2 The Swim Grammar
 
-Swim is defined by a Pegex (PEG) grammar L<here|https://github.com/ingydotnet/swim-
-pgx/blob/master/swim.pgx>.
+Swim is defined by a Pegex (PEG) grammar here:
+
+=over
+
+=item * L<https://github.com/ingydotnet/swim-pgx/blob/master/swim.pgx>
+
+=back
 
 This affords:
 
