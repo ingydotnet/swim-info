@@ -206,7 +206,7 @@ Create the package that is ready for CPAN.
 
 =item C<make help>
 
-More cool C<make> tagets.
+More cool C<make> targets.
 
 =back
 
